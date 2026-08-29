@@ -1,6 +1,7 @@
 import Button from "./components/ui/Button";
 import Card from "./components/ui/Card";
 import Table from "./components/ui/Table";
+import Home from "./pages/Home";
 import "./App.css";
 
 function App() {
@@ -57,6 +58,11 @@ function App() {
       <section>
         <h2>Students Table</h2>
         <Table columns={["Name", "Age", "City"]} data={students} striped />
+      </section>
+
+      {/* ---------- Home Page: Posts Grid (React Query) ---------- */}
+      <section>
+        <Home />
       </section>
     </div>
   );
